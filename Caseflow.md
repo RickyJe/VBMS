@@ -3,11 +3,18 @@ Caseflow is a system that will ultimately replace the Veterans Appeals Control a
 ## Data Flow
 ```mermaid
 sequenceDiagram
-    Participant VBMS as VBMS
-    Participant Caseflow as Caseflow
-    Participant BGS as BGS
-    Participant VACOLS as VACOLS
-    Participant VVA as VVA
+    Participant Caseflow
+    Participant VBMS
+    Participant BGS
+    Participant VACOLS
+    Participant VVA
+    Caseflow ->> VBMS: ClaimService(V5, API) 
+    VBMS -->> Caseflow: eFolderUploadService API
+    Caseflow->> BGS: DocumentList
+    Caseflow->> VACOLS : Verans Appeals Control and Locator System(cases before 2019)
+    Caseflow->> VVA : Legacy content management (Virtual VA)
+    Notification -->> Caseflow   : Sends email and text messages
+
 ```
 ## Interfacing Systems
 |System|Acronym|VASI|
