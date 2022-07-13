@@ -8,12 +8,12 @@ sequenceDiagram
     Participant BGS
     Participant VACOLS
     Participant VVA
-    Caseflow ->> VBMS: ClaimService(V5, API) 
-    VBMS -->> Caseflow: eFolderUploadService API
-    Caseflow->> BGS: DocumentList
-    Caseflow->> VACOLS : Verans Appeals Control and Locator System(cases before 2019)
-    Caseflow->> VVA : Legacy content management (Virtual VA)
-    Notification -->> Caseflow   : Sends email and text messages
+    VBMS ->> Caseflow: ClaimService(V5, API) 
+    Caseflow -->> VBMS: eFolderUploadService API
+    BGS ->> Caseflow: DocumentList
+    VACOLS->> Caseflow : Verans Appeals Control and Locator System(cases before 2019)
+    VVA->> Caseflow : Legacy content management (Virtual VA)
+    Caseflow -->> Notification   : Sends email and text messages
 
 ```
 ## Interfacing Systems
