@@ -3,8 +3,8 @@ Caseflow is a system that will ultimately replace the Veterans Appeals Control a
 ## Data Flow
 ```mermaid
 sequenceDiagram
-    Participant Caseflow
     Participant VBMS
+    Participant Caseflow
     Participant BGS
     Participant VACOLS
     Participant VVA
