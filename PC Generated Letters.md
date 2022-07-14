@@ -9,6 +9,6 @@ sequenceDiagram
     VBMS -->> PCGL : Get data for letters
     PCGL ->> BDN :  Retrieve data for letter
     BDN -->> PCGL  : Get data for letters
-    VETSNET ->> PCGL: Get data for letters
-    PCGL -->> VETSNET :  Retrieve data for letter
+    PCGL ->> VETSNET :  Retrieve data for letter
+    VETSNET -->> PCGL: Get data for letters
 ```
