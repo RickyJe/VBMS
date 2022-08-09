@@ -8,7 +8,7 @@ sequenceDiagram
     VBMS ->> VETSNET: ClaimProcess
     VETSNET -->> VBMS: benfit information
     Treasury System ->> VETSNET:  payment information
-    DOL System ->> VETSNET :Extenal System
+    DOL System ->> VETSNET :Extenal System (interfaces)
     VETSNET -->> DOL System : External System
     NationalArchives -->> VETSNET : External System
     VETSNET -->> NationalArchives: External System
