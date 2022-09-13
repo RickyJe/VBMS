@@ -1,13 +1,15 @@
 ## Data Flow
 ```mermaid
 sequenceDiagram
-    Participant VBMS
     Participant PIES
+    Participant NATIONAL ARCHIVES
+    Participant VBMS
     Participant Tuxedo
     Participant BDN
 
-    VBMS ->> PIES:  Benfit information
-    PIES -->> VBMS: Process Benefits
+    PIES ->> NATIONAL ARCHIVES: Interface
+    PIES  ->> VBMS:  Benfit information
+    VBMS -->> PIES: Process Benefits
     Tuxedo ->> PIES: Develop Claim
     PIES->> Tuxedo : retrieves information
     BDN->> PIES : Examinations 
