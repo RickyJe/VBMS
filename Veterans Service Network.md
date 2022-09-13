@@ -6,7 +6,7 @@ sequenceDiagram
     Participant NationalArchives
     Participant DOL System
     VBMS ->> VETSNET: ClaimProcess
-    VETSNET -->> VBMS: Benfit information
+    VETSNET -->> VBMS: Benefits information
     Treasury System ->> VETSNET:  Payment Information
     DOL System ->> VETSNET :Extenal System (interfaces)
     VETSNET -->> DOL System : External System
