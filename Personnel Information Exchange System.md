@@ -9,7 +9,7 @@ sequenceDiagram
 
     PIES ->> NATIONAL ARCHIVES: Interface(Service Records)
     NATIONAL ARCHIVES ->> PIES: Interface
-    PIES  ->> VBMS:  Benfit information
+    PIES  ->> VBMS:  Benfits Information
     VBMS ->> PIES: Process Benefits
-    BDN ->> PIES : Examinations (verify SSN)
-    PIES ->> BDN   : Examinations 
+    PIES ->> BDN : Examinations (verify SSN)
+    BDN ->> PIES   : Examinations 
