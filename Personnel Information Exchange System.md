@@ -1,9 +1,10 @@
 ## Data Flow
 ```mermaid
 sequenceDiagram
+    Participant VBMS
     Participant PIES
     Participant NATIONAL ARCHIVES
-    Participant VBMS
+   
     Participant BDN
 
     PIES ->> NATIONAL ARCHIVES: Interface(Service Records)
