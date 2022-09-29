@@ -16,4 +16,12 @@ sequenceDiagram
     VETSNET -->> FBI : External System
     IRS->> VETSNET : External System
     VETSNET --> IRS: External System
+    SSA->> VETSNET : External System
+    VETSNET --> SSA: External System
+    Dept of Edu->> VETSNET : External System
+    VETSNET --> dept of Edu: External System 
+    VAMC ->> VETSNET : External System
+    VETSNET --> VAMC: External System
+    Treasury ->> VETSNET : External System
+    VETSNET --> Treasury: External System
 ```
